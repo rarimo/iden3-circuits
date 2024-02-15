@@ -10,5 +10,5 @@ component main{public [requestID,
                        isRevocationChecked,
                        challenge,
                        gistRoot,
-                       voteId,
+                       vote,
                        commitment]} = CredentialAtomicQueryMTPOnChain(40, 32, 64, 40, 64);
