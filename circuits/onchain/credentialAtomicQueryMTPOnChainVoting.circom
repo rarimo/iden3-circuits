@@ -134,6 +134,7 @@ template CredentialAtomicQueryMTPOnChain(issuerLevels, claimLevels, valueArraySi
     // Bindings for voting
     // Are not part of any computation within the circuit 
     signal input vote;
+    signal input votingAddress;
     signal input commitment;
 
     /*
@@ -142,6 +143,7 @@ template CredentialAtomicQueryMTPOnChain(issuerLevels, claimLevels, valueArraySi
 
     // Squares are used to prevent optimizer from removing constraints
     signal voteSquare <== vote * vote;
+    signal votingAddressSquare <== votingAddress * votingAddress;
     signal commitmentSquare <== commitment * commitment;
 
     component auth = AuthV2(idOwnershipLevels, onChainLevels);
