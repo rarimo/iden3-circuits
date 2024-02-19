@@ -11,4 +11,4 @@ component main{public [requestID,
                        challenge,
                        gistRoot,
                        votingAddress,
-                       commitment]} = CredentialAtomicQueryMTPOnChain(40, 32, 64, 40, 64);
+                       commitment]} = CredentialAtomicQueryMTPOnChainVoting(40, 32, 1, 40, 64);

@@ -29,7 +29,7 @@ comparison ["1", "2", "3"]
 idOwnershipLevels - Merkle tree depth level for personal claims
 onChainLevels - Merkle tree depth level for Auth claim on-chain
 */
-template CredentialAtomicQueryMTPOnChain(issuerLevels, claimLevels, valueArraySize, idOwnershipLevels, onChainLevels) {
+template CredentialAtomicQueryMTPOnChainVoting(issuerLevels, claimLevels, valueArraySize, idOwnershipLevels, onChainLevels) {
 
     /*
     >>>>>>>>>>>>>>>>>>>>>>>>>>> Inputs <<<<<<<<<<<<<<<<<<<<<<<<<<<<
